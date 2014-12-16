@@ -181,3 +181,25 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# add by xlgwr
+*/app.config
+
+*.bak
+
+/*/*.bak
+
+/*/app.config
+/*/app.config2
+/*/app.config4
+
+/packages/*
+
+*/bin/*
+*/obj/*
+
+/*/bin/*
+/*/obj/*
+
+/*/*/bin/*
+/*/*/obj/*
