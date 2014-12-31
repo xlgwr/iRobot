@@ -81,6 +81,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -91,20 +94,78 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2.js" />
+    <Content Include="Scripts\jquery-ui-1.11.2.min.js" />
     <Content Include="Scripts\jquery.signalR-2.1.2.js" />
     <Content Include="Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Scripts\JSBus\Bus.js" />
+    <Content Include="Scripts\JSBus\Bus.min.js" />
+    <Content Include="Scripts\JSBus\LocalStorageQueue.js" />
+    <Content Include="Scripts\JSBus\LocalStorageQueue.min.js" />
+    <Content Include="Scripts\JSBus\LocalStorageStore.js" />
+    <Content Include="Scripts\JSBus\LocalStorageStore.min.js" />
+    <Content Include="Scripts\JSBus\SignalRSendTransport.js" />
+    <Content Include="Scripts\JSBus\SignalRSendTransport.min.js" />
+    <Content Include="Scripts\JSBus\SignalRSubscribeTransport.js" />
+    <Content Include="Scripts\JSBus\SignalRSubscribeTransport.min.js" />
+    <Content Include="SignalR.Sample\jquery-1.10.2.min.js" />
+    <Content Include="SignalR.Sample\jquery.color-2.1.2.min.js" />
+    <Content Include="SignalR.Sample\SignalR.StockTicker.js" />
+    <Content Include="SignalR.Sample\StockTicker.css" />
+    <Content Include="SignalR.Sample\StockTicker.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="SignalR.Sample\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChatHub.cs" />
+    <Compile Include="MoveShapeHub.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignalR.Sample\Startup.cs" />
+    <Compile Include="SignalR.Sample\Stock.cs" />
+    <Compile Include="SignalR.Sample\StockTicker.cs" />
+    <Compile Include="SignalR.Sample\StockTickerHub.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="StockTickerHub.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
